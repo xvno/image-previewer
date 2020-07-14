@@ -1,0 +1,45 @@
+#container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    background-color: gray;
+}
+
+#container #target {
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    display: none;
+}
+
+#canvas {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+#oasis {
+    display: none;
+    visibility: hidden;
+}
+
+.indicator {
+    border: 1px solid HSLA(190, 71%, 67%, 1);
+    background: HSLA(190, 71%, 67%, 0.6);
+    position: absolute;
+    pointer-events: none;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
